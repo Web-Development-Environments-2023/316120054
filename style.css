@@ -1,7 +1,126 @@
-#menu
+
+nav {
+    height: 35px;
+    margin: 0 auto; /* center the navbar horizontally */
+    width: 50%;
+  }
+  
+  nav ul {
+    background:  rgba(0, 119, 190,0.5 ); /* blue color for navbar */
+    list-style-type: none;
+    margin: 0px;
+    padding: 7px;
+    text-align: center; /* center the list items */
+    border-radius: 10px;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px; /* add some space between list items */
+  }
+  
+  nav li:last-child {
+    margin-right: 0; /* remove margin from last list item */
+  }
+  nav a{
+    color: white;
+    text-decoration: none;
+
+  }
+  nav a:hover{
+    text-decoration: underline;
+  }
+  
+/* #menu
 {
 	position: fixed;
-	width: 100%;
+	width:50%;
 	height: 35px;
-	background: white;
+    margin: auto;
+    
+    z-index: 1;
+    top: 0;
+	
 }
+
+ul{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    background:  rgba(0, 119, 190,0.5 );
+}
+li{
+    display: inline;
+    margin: 10px; 
+    text-align: center;
+}
+*/
+section{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    transition: background-color 1s ease-in-out;
+    background-color: rgba(0, 119, 190, 0.5 );
+
+} 
+#about{
+    margin-top: 20px;
+   
+    
+}
+#titles{
+    background-color: rgba(0, 119, 190, 0.5 );
+    padding: 5px;
+    border-radius: 3px;
+}
+
+section:hover{
+    background-color:rgb(237, 239, 131,0.8) ; /* light gray color code on hover */
+
+}
+
+.like-button {
+    background-color: rgba(0, 119, 190, 0.5 );
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 65px;
+   
+  }
+  
+ 
+  
+  .like-button img {
+    height: 50px; /* set the height to 15px to make it smaller */
+    padding-right: 10px;
+    
+  }
+  
+  #like-count {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  .like-button:active {
+    animation-name: like-bounce;
+    animation-duration: 0.3s;
+  }
+  
+  @keyframes like-bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  

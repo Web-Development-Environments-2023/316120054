@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>elderly website</title>
+<META NAME = "keywords" CONTENT = "Webpage, design, HTML, 
+		   tutorial, personal, help, index, form, contact, feedback,
+   		   list, links, frame, deitel">
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
+
+<nav id="menu">
+<ul>
+<li id="About"><a href="#about">About Me</a></li>
+<li><a href="#photos"> My Photos</a></li>
+<li><a href="#playlist"> My Playlist</a></li>
+<li><a href="#like"> Like</a></li>
+<li><a href="#qrcoder"> QR code</a></li>
+<li><a href="#spa"> Q&A</a></li>
+<li><a href="#contact"> Contact Me</a></li>
+</ul>
+</nav>
+
+ 
 <section id="about" class="section">
 <br/>
+<a id="titles">About me</a>
+<br/>
+<br/>
+<br/>
+<br/>
+
 <br/>
 <br/>
 <br/>
@@ -27,11 +41,6 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
 <br/>
 <br/>
 <br/>
@@ -40,6 +49,12 @@ about me
 <section id="photos" class="section">
 <br/>
 <br/>
+<a id="titles">My photos</a>
+<br/>
+
+<br/>
+<br/>
+
 <br/>
 <br/>
 <br/>
@@ -51,10 +66,7 @@ about me
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-my photos
+
 <br/>
 <br/>
 <br/>
@@ -63,6 +75,11 @@ my photos
 <section id="playlist" class="section">
 <br/>
 <br/>
+<a id="titles">My playlist</a>
+<br/>
+<br/>
+<br/>
+
 <br/>
 <br/>
 <br/>
@@ -74,10 +91,7 @@ my photos
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-my playlist
+
 <br/>
 <br/>
 <br/>
@@ -86,6 +100,17 @@ my playlist
 <section id="like" class="section">
 <br/>
 <br/>
+<a id="titles">Liked my page?</a>
+<br/>
+<br/>
+<br/>
+<button class="like-button">
+<img src="like.png" alt="Like">
+<span>Like</span>
+</button>
+<span id="like-count">0</span>
+<a>likes</a>
+
 <br/>
 <br/>
 <br/>
@@ -97,10 +122,7 @@ my playlist
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-give me a like
+
 <br/>
 <br/>
 <br/>
@@ -109,6 +131,11 @@ give me a like
 <section id="qrcoder" class="section">
 <br/>
 <br/>
+<a id="titles">Scan my code</a>
+<br/>
+<br/>
+<br/>
+
 <br/>
 <br/>
 <br/>
@@ -120,16 +147,20 @@ give me a like
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-scan my code
+
 <br/>
 <br/>
 <br/>
 </section>
 
-<section id="spa" class="section">
+<section id="qa" class="section">
+<br/>
+<br/>
+<a id="titles">Q&A</a>
+<br/>
+<br/>
+<br/>
+
 <br/>
 <br/>
 <br/>
@@ -141,12 +172,7 @@ scan my code
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
+
 <br/>
 <br/>
 <br/>
@@ -155,6 +181,25 @@ ans
 <section id="contact" class="section">
 <br/>
 <br/>
+<a id="titles">Contact me</a>
+<br/>
+<br/>
+<br/>
+<form>
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea><br>
+  <label for="smiley">Select a smiley:</label>
+  <select id="smiley" name="smiley">
+    <option value="🙂">🙂</option>
+    <option value="😊">😊</option>
+    <option value="😃">😃</option>
+    <option value="😍">😍</option>
+    <option value="😂">😂</option>
+  </select><br>
+  <button type="submit">Send</button>
+</form>
 <br/>
 <br/>
 <br/>
@@ -166,17 +211,14 @@ ans
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-contact me
+
 <br/>
 <br/>
 <br/>
 </section>
 
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
     e.preventDefault();
@@ -187,7 +229,17 @@ $(function(){
 <script type="text/javascript">
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+ });
+ </script> -->
+  <script type="text/javascript">
+    var likeButton = document.querySelector('.like-button');
+    var likeCount = document.querySelector('#like-count');
+    var count = 0;
+
+    likeButton.addEventListener('click', function() {
+      count++;
+      likeCount.innerHTML = count;
+    });
+  </script>
 </body>
 </html>
