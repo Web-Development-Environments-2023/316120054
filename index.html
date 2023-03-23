@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="y8PeEN3m"></script>
 
 <nav id="menu">
 <ul>
@@ -27,23 +29,20 @@
 <a id="titles">About me</a>
 <br/>
 <br/>
+<p class="about-me">Well, I'm Morgan Freeman, and I've had a pretty successful career as an actor, producer, and narrator. 
+  I've been in a lot of movies, TV shows, and stage productions, and I've won some awards for my work.
+   You might remember me as Red in "The Shawshank Redemption," or God in "Bruce Almighty." 
+   But, I'm not just about my career. I care about giving back, too. 
+   I co-founded the Grenada Relief Fund and support several charities focused on education, the environment, and healthcare. 
+  In my personal life, I've been married twice and have four children.</p>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 </section>
 
 <section id="photos" class="section">
@@ -51,25 +50,22 @@
 <br/>
 <a id="titles">My photos</a>
 <br/>
+<br/>
+<br/>
+<div class="container">
+<div class="image-grid">
+  <img class="image-grid-col-2 image-grid-row-2" src="morgan-children.jpg"  alt="Morgan">
+  <img src="morgan-1.jpg" alt="Morgan" >
+  <img src="morgan-2.jpg" alt="Morgan">
+  <img src="morgan-glasses.jpg" alt="Morgan">
+  <img src="morgan-high.jpg" alt="Morgan">
+</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
 
-<br/>
-<br/>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<br/>
-<br/>
-<br/>
 </section>
 
 <section id="playlist" class="section">
@@ -78,6 +74,8 @@
 <a id="titles">My playlist</a>
 <br/>
 <br/>
+<p>You can enjoy from some music that i love!</p>
+<iframe width="450" height="250" src="https://www.youtube.com/embed/THDBqlOOnWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/>
 
 <br/>
@@ -85,15 +83,7 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
-<br/>
-<br/>
 <br/>
 </section>
 
@@ -104,50 +94,28 @@
 <br/>
 <br/>
 <br/>
-<button class="like-button">
-<img src="like.png" alt="Like">
-<span>Like</span>
-</button>
-<span id="like-count">0</span>
-<a>likes</a>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="120" data-layout="" data-action="" data-size="" data-share="true"></div>
 <br/>
 <br/>
 <br/>
 <br/>
 
-<br/>
-<br/>
-<br/>
+
 </section>
 
 <section id="qrcoder" class="section">
 <br/>
 <br/>
-<a id="titles">Scan my code</a>
+<a id="titles">Scan for my site</a>
 <br/>
 <br/>
 <br/>
-
-<br/>
-<br/>
-<br/>
-<br/>
+<img class="qrcode" src="qrcode.png" alt="QR code">
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-
 <br/>
 <br/>
 <br/>
@@ -160,7 +128,6 @@
 <br/>
 <br/>
 <br/>
-
 <br/>
 <br/>
 <br/>
@@ -172,7 +139,6 @@
 <br/>
 <br/>
 <br/>
-
 <br/>
 <br/>
 <br/>
@@ -183,13 +149,12 @@
 <br/>
 <a id="titles">Contact me</a>
 <br/>
-<br/>
-<br/>
-<form>
-  <label for="email">Your Email:</label>
-  <input type="email" id="email" name="email"><br>
-  <label for="message">Message:</label>
-  <textarea id="message" name="message"></textarea><br>
+
+<div class="form-container">
+<form action="https://formsubmit.co/roihas@post.bgu.ac.il" method="POST">
+  <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+  <textarea type="text" id="message" name="message" rows="4" placeholder="Your message"></textarea>
+  <br/>
   <label for="smiley">Select a smiley:</label>
   <select id="smiley" name="smiley">
     <option value="🙂">🙂</option>
@@ -197,28 +162,40 @@
     <option value="😃">😃</option>
     <option value="😍">😍</option>
     <option value="😂">😂</option>
+    <option value="😢">😢</option>
   </select><br>
-  <button type="submit">Send</button>
-</form>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+  <br/>
+  <button id="submit-but" type="submit" value="Submit">Send</button>
+  </form>
+</div>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
 
-<br/>
-<br/>
-<br/>
 </section>
+<footer class="footer">
+  <p class="p-footer">&copy; 2023 Morgan ltd. All Rights Reserved.</p>
+</footer>
 
-
-<!-- <script type="text/javascript">
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "roihas@post.bgu.ac.il",
+    Password : "rHas9697",
+    To : 'roihas@post.bgu.ac.il',
+    From : document.getElementById("email").value,
+    Subject : "A new message from your contact form",
+    Body : document.getElementById("message").value + " " + document.getElementById("smiley").value,
+}).then(
+  message => alert(message)
+);
+  }
+</script> -->
+<script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
     e.preventDefault();
@@ -230,7 +207,7 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });
- </script> -->
+ </script>
   <script type="text/javascript">
     var likeButton = document.querySelector('.like-button');
     var likeCount = document.querySelector('#like-count');
