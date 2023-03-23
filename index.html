@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>elderly website</title>
+<title>Morgan website</title>
 <META NAME = "keywords" CONTENT = "Webpage, design, HTML, 
 		   tutorial, personal, help, index, form, contact, feedback,
    		   list, links, frame, deitel">
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="y8PeEN3m"></script>
 
+<div class="bar-container">
 <nav id="menu">
 <ul>
 <li id="About"><a href="#about">About Me</a></li>
@@ -18,17 +17,19 @@
 <li><a href="#playlist"> My Playlist</a></li>
 <li><a href="#like"> Like</a></li>
 <li><a href="#qrcoder"> QR code</a></li>
-<li><a href="#spa"> Q&A</a></li>
+<li><a href="#qa"> Q&A</a></li>
 <li><a href="#contact"> Contact Me</a></li>
 </ul>
 </nav>
+</div>
 
  
 <section id="about" class="section">
 <br/>
+<br/>
+<br/>
 <a id="titles">About me</a>
-<br/>
-<br/>
+
 <p class="about-me">Well, I'm Morgan Freeman, and I've had a pretty successful career as an actor, producer, and narrator. 
   I've been in a lot of movies, TV shows, and stage productions, and I've won some awards for my work.
    You might remember me as Red in "The Shawshank Redemption," or God in "Bruce Almighty." 
@@ -46,6 +47,7 @@
 </section>
 
 <section id="photos" class="section">
+<br/>
 <br/>
 <br/>
 <a id="titles">My photos</a>
@@ -71,11 +73,12 @@
 <section id="playlist" class="section">
 <br/>
 <br/>
+<br/>
 <a id="titles">My playlist</a>
 <br/>
 <br/>
 <p>You can enjoy from some music that i love!</p>
-<iframe width="450" height="250" src="https://www.youtube.com/embed/THDBqlOOnWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="500" height="300" src="https://www.youtube.com/embed/THDBqlOOnWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/>
 
 <br/>
@@ -86,8 +89,10 @@
 
 <br/>
 </section>
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="y8PeEN3m"></script>
 <section id="like" class="section">
+<br/>
 <br/>
 <br/>
 <a id="titles">Liked my page?</a>
@@ -106,6 +111,7 @@
 <section id="qrcoder" class="section">
 <br/>
 <br/>
+<br/>
 <a id="titles">Scan for my site</a>
 <br/>
 <br/>
@@ -122,6 +128,7 @@
 </section>
 
 <section id="qa" class="section">
+<br/>
 <br/>
 <br/>
 <a id="titles">Q&A</a>
@@ -147,6 +154,7 @@
 <section id="contact" class="section">
 <br/>
 <br/>
+<br/>
 <a id="titles">Contact me</a>
 <br/>
 
@@ -170,31 +178,14 @@
 </div>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
+
 
 </section>
 <footer class="footer">
   <p class="p-footer">&copy; 2023 Morgan ltd. All Rights Reserved.</p>
 </footer>
 
-<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  function sendEmail(){
-    Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "roihas@post.bgu.ac.il",
-    Password : "rHas9697",
-    To : 'roihas@post.bgu.ac.il',
-    From : document.getElementById("email").value,
-    Subject : "A new message from your contact form",
-    Body : document.getElementById("message").value + " " + document.getElementById("smiley").value,
-}).then(
-  message => alert(message)
-);
-  }
-</script> -->
+
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
@@ -207,16 +198,6 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });
- </script>
-  <script type="text/javascript">
-    var likeButton = document.querySelector('.like-button');
-    var likeCount = document.querySelector('#like-count');
-    var count = 0;
-
-    likeButton.addEventListener('click', function() {
-      count++;
-      likeCount.innerHTML = count;
-    });
-  </script>
+</script>
 </body>
 </html>

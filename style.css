@@ -1,31 +1,50 @@
-
+.bar-container{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 nav {
+  position: fixed;
     height: 35px;
-    margin: 0 auto; /* center the navbar horizontally */
+    margin: 10px auto; 
+    
     width: auto;
     font-family:Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    
   }
   
   nav ul {
-    background:  rgba(0, 119, 190,0.5 ); /* blue color for navbar */
+    background:  rgba(0, 119, 190,0.5 ); 
     list-style-type: none;
     margin: 0px;
     padding: 7px;
     text-align: center; /* center the list items */
     border-radius: 10px;
+    display: flex;
+   
+    
   }
   
   nav li {
     display: inline-block;
     margin-right: 20px; /* add some space between list items */
+    
   }
   
   nav li:last-child {
     margin-right: 0; /* remove margin from last list item */
+    
   }
   nav a{
     color: white;
     text-decoration: none;
+   
 
   }
   nav a:hover{
@@ -45,7 +64,6 @@ section{
 #about{
     margin-top: 20px;
    
-    
 }
 #titles{
     background-color: rgba(0, 119, 190, 0.5 );
@@ -106,23 +124,13 @@ form select{
     background-color: rgb(255, 255, 255);
     box-shadow:1px 1px 2px #c2c2c2 ;
     width: 100px;
+    color: black;
   }
  
   #submit-but:hover{
     background-color: rgb(237, 239, 131,0.8); /* Darker yellow on hover */
     cursor: pointer;
   }
-  /* textarea{
-   
-    height: 70px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: rgb(255, 255, 255);
-    box-shadow:1px 1px 2px #c2c2c2 ;
-    
-  } */
   
   .container{
     display: flex;
@@ -137,6 +145,7 @@ form select{
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 220px;
     gap: 10px;
+    max-width: 850px;
     
     
   }
@@ -155,12 +164,12 @@ form select{
     grid-row: span 2;
 }
 .about-me{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 50px;
     margin: 20px;
     font-size: 25px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 .qrcode{
     width: 120px;
