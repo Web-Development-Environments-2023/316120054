@@ -164,7 +164,7 @@
 <br/>
 
 <div class="form-container">
-<form action="https://formsubmit.co/roihas@post.bgu.ac.il" method="POST">
+<form >
   <input type="email" id="email" name="email" placeholder="Your Email" required><br>
   <textarea type="text" id="message" name="message" rows="4" placeholder="Your message"></textarea>
   <br/>
@@ -178,7 +178,7 @@
     <option value="😢">😢</option>
   </select><br>
   <br/>
-  <button id="submit-but" type="submit" value="Submit">Send</button>
+  <button id="submit-but" type="submit" value="Submit" onclick="sendEmail()">Send</button>
   </form>
 </div>
 <br/>
@@ -189,7 +189,17 @@
 <footer class="footer">
   <p class="p-footer">&copy; 2023 Morgan ltd. All Rights Reserved.</p>
 </footer>
+<script>
+  function sendEmail() {
+  
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var smiley = document.getElementById("smiley").value;
+  var mailtoLink = "mailto:" + email + "?subject=From%20contact%20form"  + "&body=" + encodeURIComponent( "Message: " + message+" "+smiley);
+  window.location.href = mailtoLink;
+}
 
+</script>
 
 <script type="text/javascript">
 $(function(){

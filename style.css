@@ -156,6 +156,10 @@ form select{
     border-radius: 10px;
     object-fit: fit;
   }
+  img:hover{
+    transform:scale(1.2) ;
+    transition: transform 0.7s ease-in-out;
+  }
   .image-grid-col-2{
     grid-column: span 2;
   
