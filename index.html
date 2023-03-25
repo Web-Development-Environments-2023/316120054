@@ -166,7 +166,7 @@
 <div class="form-container">
 <form >
   <input type="email" id="email" name="email" placeholder="Your Email" required><br>
-  <textarea type="text" id="message" name="message" rows="4" placeholder="Your message"></textarea>
+  <textarea type="text" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
   <br/>
   <label for="smiley">Select a smiley:</label>
   <select id="smiley" name="smiley">
@@ -190,12 +190,24 @@
   <p class="p-footer">&copy; 2023 Morgan ltd. All Rights Reserved.</p>
 </footer>
 <script>
+  function validateEmail(email) {
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
   function sendEmail() {
   
-  var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
   var smiley = document.getElementById("smiley").value;
-  var mailtoLink = "mailto:" + email + "?subject=From%20contact%20form"  + "&body=" + encodeURIComponent( "Message: " + message+" "+smiley);
+  // var email = document.getElementById("email").value;
+  // if (!validateEmail(email)) {
+  //   alert("Please enter a valid email address");
+  //   return;
+  // }
+  if(message.length == 0 || message == null){
+    alert("Please enter a message");
+    return;
+  }
+  var mailtoLink = "mailto:roihas@post.bgu.ac.il" +  "?subject=From%20contact%20form"  + "&body=" + encodeURIComponent("Message: " + message+" "+smiley);
   window.location.href = mailtoLink;
 }
 
