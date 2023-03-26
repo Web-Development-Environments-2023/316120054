@@ -17,7 +17,7 @@ The Morgan Freeman University Website is built using the following technologies:
 
 * HTML5
 * CSS3
-* JavaScript
+* JavaScript\n
 The website is designed to be responsive and mobile-friendly, with a clean and modern design.
 
 [A link to the website](https://web-development-environments-2023.github.io/316120054/)
