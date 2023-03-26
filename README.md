@@ -1,15 +1,15 @@
-#Morgan Freeman
+# Morgan Freeman
 This website is dedicated to the renowned American actor and film narrator, Morgan Freeman. The website provides information about Morgan Freeman's life, career, achievements.
 
-##Features
+## Features
 The Morgan Freeman  Website includes the following features:
-*About me section- A short text about Morgan's life.
-*My photos section - Some photos of Morgan.
-*My playlist section - A link to his favorite songs.
-*Like section - A place to praise the website. 
-*QR code section - QR code for scanning.
-*Q&A section - some information about web versions.
-*Contact me section - A form to contact Morgan
+* About me section- A short text about Morgan's life.
+* My photos section - Some photos of Morgan.
+* My playlist section - A link to his favorite songs.
+* Like section - A place to praise the website. 
+* QR code section - QR code for scanning.
+* Q&A section - some information about web versions.
+* Contact me section - A form to contact Morgan
 
 
 Technologies Used
