@@ -5,6 +5,7 @@
 <META NAME = "keywords" CONTENT = "Webpage, design, HTML, 
 		   tutorial, personal, help, index, form, contact, feedback,
    		   list, links, frame, deitel">
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
@@ -164,54 +165,41 @@
 <br/>
 
 <div class="form-container">
-<form >
+<form id="my-form" action="mailto:roihas@post.bgu.ac.il?subject=From%20contact%20form&body=" method="POST" enctype="text/plain">
   <input type="email" id="email" name="email" placeholder="Your Email" required><br>
   <textarea type="text" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
   <br/>
   <label for="smiley">Select a smiley:</label>
-  <select id="smiley" name="smiley">
+  <select id="smiley" name="smiley" >
     <option value="🙂">🙂</option>
     <option value="😊">😊</option>
     <option value="😃">😃</option>
     <option value="😍">😍</option>
     <option value="😂">😂</option>
     <option value="😢">😢</option>
+    <option value="😎">😎</option>
+   
   </select><br>
-  <br/>
-  <button id="submit-but" type="submit" value="Submit" onclick="sendEmail()">Send</button>
+  
+  <input id="submit-but" type="Submit" value="Submit" >
   </form>
+  
 </div>
 <br/>
 <br/>
 
 
 </section>
+<button id="scrollButton" class="scrollButton"><img class="arrow-img"src="arrow.png" alt="arrow"> </button>
+
+
 <footer class="footer">
   <p class="p-footer">&copy; 2023 Morgan ltd. All Rights Reserved.</p>
 </footer>
-<script>
-  function validateEmail(email) {
-  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email);
-}
-  function sendEmail() {
-  
-  var message = document.getElementById("message").value;
-  var smiley = document.getElementById("smiley").value;
-  // var email = document.getElementById("email").value;
-  // if (!validateEmail(email)) {
-  //   alert("Please enter a valid email address");
-  //   return;
-  // }
-  if(message.length == 0 || message == null){
-    alert("Please enter a message");
-    return;
-  }
-  var mailtoLink = "mailto:roihas@post.bgu.ac.il" +  "?subject=From%20contact%20form"  + "&body=" + encodeURIComponent("Message: " + message+" "+smiley);
-  window.location.href = mailtoLink;
-}
 
-</script>
+
+
+
 
 <script type="text/javascript">
 $(function(){
@@ -225,6 +213,15 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });
+</script>
+<script type="text/javascript">
+  const scrollButton = document.getElementById('scrollButton');
+  scrollButton.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 </script>
 </body>
 </html>
