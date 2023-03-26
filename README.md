@@ -1,15 +1,17 @@
-Morgan Freeman University Website
-This website is dedicated to the renowned American actor and film narrator, Morgan Freeman. The website provides information about Morgan Freeman's life, career, achievements, and notable contributions to the film industry.
+#Morgan Freeman
+This website is dedicated to the renowned American actor and film narrator, Morgan Freeman. The website provides information about Morgan Freeman's life, career, achievements.
 
-Features
-The Morgan Freeman University Website includes the following features:
+##Features
+The Morgan Freeman  Website includes the following features:
+*About me section- A short text about Morgan's life.
+*My photos section - Some photos of Morgan.
+*My playlist section - A link to his favorite songs.
+*Like section - A place to praise the website. 
+*QR code section - QR code for scanning.
+*Q&A section - some information about web versions.
+*Contact me section - A form to contact Morgan
 
-Home page with an introduction to the website and Morgan Freeman
-About page with biographical information about Morgan Freeman
-Career page with details about Freeman's career in film and television
-Filmography page with a list of Freeman's notable films and TV shows
-Awards page with a list of Freeman's awards and nominations
-Contact page with a form to contact the website administrators
+
 Technologies Used
 The Morgan Freeman University Website is built using the following technologies:
 
